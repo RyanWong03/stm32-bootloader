@@ -53,3 +53,16 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Build output folders (CubeIDE)
+Debug/
+Release/
+build/
+
+# More build artifacts
+*.bin
+*.list
+
+# Editors / OS
+.vscode/
+.DS_Store
