@@ -10,3 +10,8 @@
 - App's .project was empty, so Build was grayed out; fixed by copying the
   bootloader's .project and renaming it.
 - App's VECT_TAB_OFFSET = 0x10000, linker FLASH origin 0x8010000.
+
+## 2026-11-23: bootloader jumps to demo app
+- Bootloader is able to jump to demo app stored in flash.
+- Performs basic sanity check on app's flash memory space and ram memory space
+- It was assumed that the app's reset handler enables interrupts; manual enabling of interrupts were necessary.

@@ -2,7 +2,7 @@
 
 A custom bootloader for STM32, written in C, that updates firmware over UART and only boots an application it has verified.
 
-> **Status:** early development. The project scaffold is set up. Next up: designing the flash layout and getting the bootloader to jump to an application.
+> **Status:** Bootloader jumps to the application; next up: image header and CRC check.
 
 ## What it will do
 
@@ -14,7 +14,7 @@ On every reset, the bootloader runs first:
 
 ## Planned features
 
-- [ ] Jump from the bootloader to a separate application
+- [x] Jump from the bootloader to a separate application
 - [ ] Image header with a CRC32 check, so a corrupted or incomplete image is never run
 - [ ] Firmware update over UART with a simple framed protocol
 - [ ] Host tool on the PC to send firmware images
