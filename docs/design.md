@@ -1,0 +1,1 @@
+![Boot flow](images/boot-flow.png)
