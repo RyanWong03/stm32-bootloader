@@ -65,6 +65,8 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
+	//Interrupts must be enabled here because they are disabled in the bootloader
+	__enable_irq();
 
   /* USER CODE END 1 */
 

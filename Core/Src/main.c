@@ -85,6 +85,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   /* USER CODE BEGIN 2 */
+  bootloader_main();
 
   /* USER CODE END 2 */
 

@@ -1,0 +1,12 @@
+#ifndef BOOTLOADER_H
+#define BOOTLOADER_H
+
+#include "stm32f4xx_hal.h"
+#include "stdbool.h"
+
+#define APP_START_ADDR   0x08010000
+#define FLASH_END_ADDR   0x08080000
+#define RAM_START_ADDR   0x20000000
+#define RAM_END_ADDR     0x20020000
+
+#endif
